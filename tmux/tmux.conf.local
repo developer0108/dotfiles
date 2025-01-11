@@ -1,1 +1,2 @@
 tmux_conf_theme_status_left=""
+set -g mouse on 
