@@ -5,12 +5,11 @@ export PATH=~/.npm-global/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-# eval "$(/home/linuxbrew/.linuxbrew/bin/oh-my-posh --init --shell zsh --config ~/custom-theme.omp.json)"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gnzh" # set by `omz`
+ZSH_THEME="gallois" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -119,13 +118,13 @@ alias cat="bat"
 less_termcap[so]="${fg_bold[black]}${bg[blue]}" 
 # Created by `pipx` on 2024-04-20 10:55:54
 export PATH="$PATH:/home/laurent/.local/bin"
-
 fastfetch -c /home/laurent/.config/fastfetch/config.jsonc 
 bindkey -v
 bindkey ^R history-incremental-search-backward 
 
-
-
+function mkcd () {
+    mkdir "$1" && cd "$1"
+}
 
 # bun completions
 [ -s "/home/laurent/.bun/_bun" ] && source "/home/laurent/.bun/_bun"
