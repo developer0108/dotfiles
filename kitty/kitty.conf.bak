@@ -6,24 +6,27 @@
 ## upstream: https://github.com/catppuccin/kitty/blob/main/macchiato.conf
 ## blurb:    Soothing pastel theme for the high-spirited!
 
-font_family "JetBrains Mono Regular Nerd Font Complete"
-font_size 10.0
+font_family "JetBrainsMono NF"
+font_size 10
 hide_window_decorations yes 
 cursor_shape beam
 
-background_blur 1
 
 remember_window_size no
 initial_window_width 1920
 initial_window_height 1080
 map ctrl+shift+t new_tab_with_cwd
 
-background_opacity .8
+background_opacity .85
 window_alert_on_bell no
 enable_audio_bell no
 disable_ligatures never 
+cursor_trail 15
+cursor_trail_decay 0.1 0.4
+cursor_trail_start_threshold 2
+
 
 # BEGIN_KITTY_THEME
-# PaperColor Dark
+# Adwaita darker
 include current-theme.conf
 # END_KITTY_THEME
